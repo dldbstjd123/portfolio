@@ -20,10 +20,7 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-var httpsOptions = {
-  key: fs.readFileSync("/etc/letsencrypt/live/yo0on.com/privkey.pem"),
-  cert: fs.readFileSync("/etc/letsencrypt/live/yo0on.com/fullchain.pem")
-}
+
 var server = https.createServer(app);
 
 /**

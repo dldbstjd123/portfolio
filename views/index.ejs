@@ -1,0 +1,17 @@
+<%- include('./layout/head.ejs')%>
+
+<body onload=onLoad();>
+  <div id='headerLayout'>
+    <%- include('./layout/left.ejs') %>
+    <div id='main'>
+      <%- include('./layout/top.ejs') %>
+      <div id='bodyWrapper'>
+        <%- include('./aboutSection.ejs') %>
+        <%- include('./experienceSection.ejs') %>
+        <%- include('./layout/footer.ejs') %>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

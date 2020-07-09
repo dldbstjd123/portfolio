@@ -12,30 +12,77 @@
         </div>
     </div>
     <div id='aboutRightSide'>
-        <div id='aboutCode' onmouseover='onMouseOverAbout(0)' onmouseout='onMouseOutAbout(0)'><img src='/images/aboutCode2.png' width='400px' height='400px'></div>
+        <div id='aboutCode' onmouseover='onMouseOverAbout(0)' onmouseout='onMouseOutAbout(0)'><img
+                src='/images/aboutCode2.png' width='400px' height='400px'></div>
         <div id='aboutFoundation' class='aboutLayout' onmouseover='onMouseOverAbout(1)' onmouseout='onMouseOutAbout(1)'>
             <div id='aboutFoundationLeft' class='aboutLayoutLeft'>Left</div>
             <div id='aboutFoundationRight' class='aboutLayoutRight'>
                 <div id='aboutFoundationTop' class='aboutLayoutTop'>Navigation</div>
                 <div id='aboutFoundationBottom' class='aboutLayoutBottom'>
-                    <div class='aboutFoundationMain'>Main</div>
-                    <div class='aboutFoundationMain'>About Section</div>
-                    <div class='aboutFoundationMain'>Experience</div>
+                    <div id='aboutFoundationMain' class='aboutLayoutMain'>About Section</div>
+                    <div id='aboutFoundationMain' class='aboutLayoutMain'>Experience Section</div>
+                    <div id='aboutFoundationMain' class='aboutLayoutMain'>Skills Section</div>
                 </div>
             </div>
         </div>
         <div id='aboutImages' class='aboutLayout' onmouseover='onMouseOverAbout(2)' onmouseout='onMouseOutAbout(2)'>
-            <div id='aboutImagesLeft' class='aboutLayoutLeft'>Left</div>
+            <div id='aboutImagesLeft' class='aboutLayoutLeft'>Y</div>
             <div id='aboutImagesRight' class='aboutLayoutRight'>
-                <div id='aboutImagesTop' class='aboutLayoutTop'>Navigation</div>
+                <div id='aboutImagesTop' class='aboutLayoutTop'>About Experience Skills Contact</div>
                 <div id='aboutImagesBottom' class='aboutLayoutBottom'>
-                    <div class='aboutFoundationMain'>Main</div>
-                    <div class='aboutFoundationMain'>About Section</div>
-                    <div class='aboutFoundationMain'>Experience</div>
+                    <div class='aboutLayoutMain'>
+                        My name is Yoon Jung <br> I'm a selft-taught software engineer.
+                    </div>
+                    <div class='aboutLayoutMain'>Experience</div>
+                    <div class='aboutLayoutMain'>Skills</div>
                 </div>
             </div>
         </div>
-        <div id='aboutText' onmouseover='onMouseOverAbout(3)' onmouseout='onMouseOutAbout(3)'><iframe src="http://www.yo0on.com" width='100%' height='100%'></iframe></div>
+        <div id='aboutText' class='aboutLayout' onmouseover='onMouseOverAbout(3)' onmouseout='onMouseOutAbout(3)'>
+            <div id='aboutFinalLeft' class='aboutLayoutLeft'>
+                <div id='aboutLogo'>Y</div>
+                <div id='aboutFinalLeftSocial'>
+                    <a href='https://www.facebook.com/YooooooNslee/'><img src='/images/facebook.png'
+                            onmouseover="this.src='/images/facebook(1).png';"
+                            onmouseout="this.src='/images/facebook.png';" width='20px' height='20px'></a>
+                    <a href='https://www.instagram.com/yoooo___oooon'><img src='/images/instagram.png'
+                            onmouseover="this.src='/images/instagram(1).png';"
+                            onmouseout="this.src='/images/instagram.png';" width='20px' height='20px'></a>
+                    <a href='https://github.com/dldbstjd123'><img src='/images/github.png'
+                            onmouseover="this.src='/images/github(1).png';" onmouseout="this.src='/images/github.png';"
+                            width='20px' height='20px'></a>
+                    <div><img src='/images/mail.png' onmouseover="this.src='/images/mail(1).png';"
+                            onmouseout="this.src='/images/mail.png';" width='20px' height='20px'></div>
+                </div>
+            </div>
+            <div class='aboutLayoutRight'>
+                <div id='aboutFinalTop' class='aboutLayoutTop'>
+                    <div></div>
+                    <div id='aboutFinalTopRight'>
+                        <div onmouseover="onMouseOver('about')" onmouseout="onMouseOut('about')" onclick="onClick('about')">
+                            <div id='aboutBar'>ABOUT</div>
+                        </div>
+                        <div onmouseover="onMouseOver('experience')" onmouseout="onMouseOut('experience')" onclick="onClick('experience')">
+                            <div>EXPERIENCE</div>
+                        </div>
+                        <div onmouseover="onMouseOver('skills')" onmouseout="onMouseOut('skills')" onclick="onClick('skills')">
+                            <div>SKILLS</div>
+                        </div>
+                        <div onmouseover="onMouseOver('contact')" onmouseout="onMouseOut('contact')" onclick="onClick('contact')">
+                            <div>CONTACT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='aboutLayoutBottom'>
+                    <div id='aboutFinalMain' class='aboutLayoutMain'>
+                        <div id='aboutFinalMainTop'>My name is <span id='aboutFinalMainName'>Yoon Jung</span></div>
+                        <div>I'm a self-taught software engineer.</div>
+                    </div>
+                    <div class='aboutLayoutMain'>Experience</div>
+                    <div class='aboutLayoutMain'>Skills</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id='moreToExperience'>

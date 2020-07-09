@@ -8,8 +8,8 @@ function onLoad() {
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight
     numberofOptions = document.getElementById('navigation').childElementCount;
     movingPercentage = 100 / numberofOptions
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     document.getElementById('introduction').style.opacity = '100'
     document.getElementById('introduction').style.top = '0px'
     delayedEffect();
@@ -43,14 +43,22 @@ function nameEffect() {
 }
 
 function moreEffect() {
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById('moreIcon').style.opacity = '100'
+        document.getElementById('aboutCode').style.opacity = '100'
+        document.getElementById('aboutCode').style.transform = 'rotateY(45deg) rotate(-5deg)'
+        document.getElementById('aboutFoundation').style.opacity = '90';
+        document.getElementById('aboutFoundation').style.transform = 'translate(25px,25px) rotateY(45deg) rotate(-5deg)'
+        document.getElementById('aboutImages').style.opacity = '80';
+        document.getElementById('aboutImages').style.transform = 'translate(50px,50px) rotateY(45deg) rotate(-5deg)'
+        document.getElementById('aboutText').style.opacity = '70';
+        document.getElementById('aboutText').style.transform = 'translate(75px,75px) rotateY(45deg) rotate(-5deg)'
         setInterval(function () {
             document.getElementById('moreIcon').style.transform = 'rotate(360deg)'
             setTimeout(function () {
                 document.getElementById('moreIcon').style.transform = 'rotate(0deg)'
             }, 2500)
         }, 5000)
-    },2000)
+    }, 2000)
 
 }

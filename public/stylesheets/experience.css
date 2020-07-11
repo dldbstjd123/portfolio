@@ -26,7 +26,12 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width:700px;
+    width:800px;
+}
+.sliderContainer{
+    position: relative;
+    display:flex;
+    justify-content: center;
 }
 
 .experienceImageContainer {
@@ -43,6 +48,43 @@
     float:left;
     margin:0px;
     padding:0px;
-    width: 700px;
-    height:500px;
+    width: 696px;
+    height:496px;
+    border:2px solid black;
+    padding: -2px;
+}
+.experienceButtonLeft {
+    position: relative;
+    width:50px;
+    height:50px;
+    border-top:7px solid black;
+    border-left:7px solid black;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    right:0px;
+    transition: right 0.5s;
+    -webkit-transition: right 0.5s;
+    -moz-transition: right 0.5s;
+    -o-transition: right 0.5s;
+}
+.experienceButtonRight{
+    position: relative;
+    width:50px;
+    height:50px;
+    border-top:7px solid black;
+    border-right:7px solid black;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    left:0px;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -o-transition: left 0.5s;
+}
+.experienceImageLocation{
+    
 }

@@ -15,6 +15,7 @@ function onLoad() {
     delayedEffect();
     nameEffect();
     moreEffect();
+    sliderEffect();
     //document.getElementById('footerLayout').style.top = document.getElementById('bodyWrapper').clientHeight + 'px';
 }
 
@@ -62,7 +63,20 @@ function moreEffect() {
         document.getElementById('aboutText').style.opacity = '70';
         document.getElementById('aboutText').style.transform = 'translate(75px,75px) rotateY(45deg) rotate(-3deg)'
     },3500)
-
-
-
+}
+console.log(document.getElementsByClassName('experienceButtonLeft')[0])
+function sliderEffect(){
+    setInterval(function(){
+        let numberOfElements = document.getElementsByClassName('experienceButtonLeft').length
+        for(let i=0; i<numberOfElements; i++){
+            document.getElementsByClassName('experienceButtonLeft')[i].style.right = '15px'
+            document.getElementsByClassName('experienceButtonRight')[i].style.left = '15px'
+        }
+        setTimeout(function(){
+            for(let i=0; i<numberOfElements; i++){
+                document.getElementsByClassName('experienceButtonLeft')[i].style.right = '0px'
+                document.getElementsByClassName('experienceButtonRight')[i].style.left = '0px'
+            }
+        },300)
+    },5000)
 }

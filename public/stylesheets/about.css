@@ -161,6 +161,11 @@
   #aboutFinalMainName{
     color: #2a26ff;
   }
+  #aboutFinalImage{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
   #moreToExperience{
     display: flex;
     height:20vh;

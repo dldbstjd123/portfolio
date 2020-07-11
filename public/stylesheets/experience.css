@@ -1,5 +1,6 @@
 #experienceSection {
     height: 700px;
+    min-height: 100vh;
 }
 
 #experienceHeader {

@@ -31,3 +31,20 @@ function onMouseOutAbout(layer){
         document.getElementById('aboutText').style.zIndex = 0
     }
 }
+
+function changeColorToBlue(x, position){
+    x.style.borderTop='7px solid blue';
+    if(position=='left'){
+        x.style.borderLeft='7px solid blue';
+    }else{
+        x.style.borderRight='7px solid blue';
+    }
+}
+function changeColorToBlack(x, position){
+    x.style.borderTop='7px solid black';
+    if(position=='left'){
+        x.style.borderLeft='7px solid black';
+    }else{
+        x.style.borderRight='7px solid black';
+    }
+}

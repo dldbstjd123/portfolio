@@ -3,8 +3,15 @@
 }
 
 #experienceHeader {
-    margin-top: 15px;
+    margin: 15px 0;
     font-size: 25px;
+}
+
+.experienceListName{
+    font-size: 20px;
+}
+.experienceListDescription{
+    width: 700px;
 }
 
 #experienceSliderContainer {
@@ -39,10 +46,10 @@
     height: 500px;
     left:0px;
     position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
 }
 .experienceImages{
     float:left;

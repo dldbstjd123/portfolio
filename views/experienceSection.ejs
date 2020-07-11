@@ -2,14 +2,13 @@
     <div id='experienceHeader'>EXPERIENCE</div>
     <div class='experienceListContianer'>
         <div class='experienceListName'>Mysuit</div>
-        <div>Responsible for building and maintaining ERP software which acts as the heart of the organization,
+        <div class='experienceListDescription'>Responsible for building and maintaining ERP software which acts as the heart of the organization,
             controlling inventory management, sales order processing, vendor management, customer management, employee
-            management, and company financials</div>
-        <div>Used Technologies</div>
+            management, and company financials.</div>
         <div class='sliderContainer'>
             <div class='buttonContainer'>
-                <div id='experience1ButtonLeft' class='experienceButtonLeft' onclick='slideToLeft(0)'></div>
-                <div id='experience1ButtonRight' class='experienceButtonRight' onclick='slideToRight(0)'></div>
+                <div id='experience1ButtonLeft' class='experienceButtonLeft' onclick='slideToLeft(0)' onmouseover='changeColorToBlue(this, "left");' onmouseout='changeColorToBlack(this, "left");'></div>
+                <div id='experience1ButtonRight' class='experienceButtonRight' onclick='slideToRight(0)' onmouseover='changeColorToBlue(this, "right");' onmouseout='changeColorToBlack(this, "right");'></div>
             </div>
             <div id='experienceSliderContainer'>
                 <div id='experienceImageContainer1' class='experienceImageContainer'>
@@ -20,6 +19,7 @@
             </div>
         </div>
         <div class='experienceImageLocation'></div>
+        <div>Used Technologies</div>
         <div>.NET, Classic ASP, NodeJS, MSSQL, Apache</div>
     </div>
 </div>

@@ -8,6 +8,7 @@ function onMouseOver(option) {
     } else if (option == 'contact') {
         document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
     }
+    console.log('mouse over event')
 }
 function onMouseOut(option) {
     if (option != currentOption) {
@@ -21,20 +22,29 @@ function onMouseOut(option) {
             document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
         }
     }
+    console.log('mouse out event')
 }
 
 function onClick(option) {
+    navigationClicked = 1;
     if (option == 'about'){
         currentOption = 'about'
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0; 
+        document.getElementById('movingBar').style.marginLeft = '0%'
     } else if (option == 'experience') {
         currentOption = 'experience'
         document.body.scrollTop = aboutSectionHeight; 
         document.documentElement.scrollTop = aboutSectionHeight; 
+        document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
     } else if (option == 'skills') {
         currentOption = 'skills'
+        document.getElementById('movingBar').style.marginLeft = 2*movingPercentage + '%'
     } else if (option == 'contact') {
         currentOption = 'contact'
+        document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
     }
+    setTimeout(function(){
+        navigationClicked = 0;
+    },1500)
 }

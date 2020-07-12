@@ -163,8 +163,29 @@
   }
   #aboutFinalImage{
     display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items:center;
+  }
+  .aboutFinalImageLeft{
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+  .aboutFinalImageRight{
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
   }
   #moreToExperience{
     display: flex;

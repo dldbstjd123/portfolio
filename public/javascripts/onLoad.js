@@ -3,6 +3,8 @@ var aboutSectionHeight = 0;
 var currentOption = 'about';
 var numberofOptions = 0;
 var movingPercentage = 0;
+var navigationClicked = 0;
+
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight

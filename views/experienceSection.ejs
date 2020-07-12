@@ -2,13 +2,17 @@
     <div id='experienceHeader'>EXPERIENCE</div>
     <div class='experienceListContianer'>
         <div class='experienceListName'>Mysuit</div>
-        <div class='experienceListDescription'>Responsible for building and maintaining ERP software which acts as the heart of the organization,
+        <div class='experienceListDescription'>Responsible for building and maintaining ERP software which acts as the
+            heart of the organization,
             controlling inventory management, sales order processing, vendor management, customer management, employee
             management, and company financials.</div>
         <div class='sliderContainer'>
             <div class='buttonContainer'>
-                <div id='experience1ButtonLeft' class='experienceButtonLeft' onclick='slideToLeft(0)' onmouseover='changeColorToBlue(this, "left");' onmouseout='changeColorToBlack(this, "left");'></div>
-                <div id='experience1ButtonRight' class='experienceButtonRight' onclick='slideToRight(0)' onmouseover='changeColorToBlue(this, "right");' onmouseout='changeColorToBlack(this, "right");'></div>
+                <div id='experience1ButtonLeft' class='experienceButtonLeft' onclick='slideToLeft(0)'
+                    onmouseover='changeColorToBlue(this, "left");' onmouseout='changeColorToBlack(this, "left");'></div>
+                <div id='experience1ButtonRight' class='experienceButtonRight' onclick='slideToRight(0)'
+                    onmouseover='changeColorToBlue(this, "right");' onmouseout='changeColorToBlack(this, "right");'>
+                </div>
             </div>
             <div id='experienceSliderContainer'>
                 <div id='experienceImageContainer1' class='experienceImageContainer'>
@@ -18,7 +22,11 @@
                 </div>
             </div>
         </div>
-        <div class='experienceImageLocation'></div>
+        <div class='experienceImageLocation'>
+            <span id='experienceLocationMysuit1' class="dot" onclick="moveSlider(0,0)"></span>
+            <span id='experienceLocationMysuit2' class="dot" onclick="moveSlider(0,1)"></span>
+            <span id='experienceLocationMysuit3' class="dot" onclick="moveSlider(0,2)"></span>
+        </div>
         <div>Used Technologies</div>
         <div>.NET, Classic ASP, NodeJS, MSSQL, Apache</div>
     </div>

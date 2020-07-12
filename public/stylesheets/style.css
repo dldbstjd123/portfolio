@@ -114,6 +114,7 @@ body {
   height: 10px;
   display: flex;
   justify-content: flex-end;
+  z-index: 100;
 }
 
 #bar {
@@ -125,6 +126,7 @@ body {
   background-color: #2a26ff;
   width: 25%;
   height: 3px;
+  margin-left: 0px;
   transition: ease-in-out 0.3s;
   -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;

@@ -40,6 +40,7 @@
     position: relative;
     display:flex;
     justify-content: center;
+    margin:15px 0;
 }
 
 .experienceImageContainer {
@@ -93,6 +94,19 @@
     -moz-transition: left 0.5s;
     -o-transition: left 0.5s;
 }
+
 .experienceImageLocation{
-    
+    display:flex;
+    justify-content: center;
+}
+.experienceImageLocation span{
+    height: 10px;
+    width: 10px;
+    margin:0 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+#experienceLocationMysuit1{
+    background-color: #2a26ff;
 }

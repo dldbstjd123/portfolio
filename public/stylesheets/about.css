@@ -46,6 +46,7 @@
     position: relative;
   }
   #aboutRightSide{
+    max-width:300px;
     display:flex;
     justify-content: flex-start;
     align-items: center;

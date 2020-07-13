@@ -5,42 +5,46 @@ function onClickLogo() {
 //Reseting Experience Image Position
 var position = 0;
 var position2 = 0;
+
 function slideToLeft(company) {
+    widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
+    console.log(widthOfExperienceImage)
     if (company == 0) {
-        position += 700
+        position += widthOfExperienceImage
         document.getElementById("experienceImageContainer1").style.left = position + 'px';
-        if (position == 700) {
+        if (position == widthOfExperienceImage) {
             changeTransition(document.getElementById("experienceImageContainer1").style, 'left 0')
-            document.getElementById("experienceImageContainer1").style.left = -1400 + 'px';
-            position = -1400
+            document.getElementById("experienceImageContainer1").style.left = -2 * widthOfExperienceImage + 'px';
+            position = -2 * widthOfExperienceImage
         }
     }
     if (company == 2) {
-        position2 += 700
+        position2 += widthOfExperienceImage
         document.getElementById("experienceImageContainer3").style.left = position2 + 'px';
-        if (position2 == 700) {
+        if (position2 == widthOfExperienceImage) {
             changeTransition(document.getElementById("experienceImageContainer3").style, 'left 0')
-            document.getElementById("experienceImageContainer3").style.left = -1400 + 'px';
-            position2 = -1400
+            document.getElementById("experienceImageContainer3").style.left = -2 * widthOfExperienceImage + 'px';
+            position2 = -2 * widthOfExperienceImage
         }
     }
     resetDotColor(company)
 }
 
 function slideToRight(company) {
+    widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     if (company == 0) {
-        position -= 700
+        position -= widthOfExperienceImage
         document.getElementById("experienceImageContainer1").style.left = position + 'px';
-        if (position == -2100) {
+        if (position == -3 * widthOfExperienceImage) {
             changeTransition(document.getElementById("experienceImageContainer1").style, 'left 0')
             document.getElementById("experienceImageContainer1").style.left = 0 + 'px';
             position = 0
         }
     }
     if (company == 2) {
-        position2 -= 700
+        position2 -= widthOfExperienceImage
         document.getElementById("experienceImageContainer3").style.left = position2 + 'px';
-        if (position2 == -2100) {
+        if (position2 == -3 * widthOfExperienceImage) {
             changeTransition(document.getElementById("experienceImageContainer3").style, 'left 0')
             document.getElementById("experienceImageContainer3").style.left = 0 + 'px';
             position2 = 0
@@ -63,11 +67,11 @@ function moveSlider(company, clickedLocation) {
                 position = 0
                 break;
             case 1:
-                position = -700;
+                position = -widthOfExperienceImage;
                 document.getElementById("experienceImageContainer1").style.left = position + 'px';
                 break;
             case 2:
-                position = -1400;
+                position = -2 * widthOfExperienceImage;
                 document.getElementById("experienceImageContainer1").style.left = position + 'px';
                 break;
         }
@@ -80,11 +84,11 @@ function moveSlider(company, clickedLocation) {
                 position2 = 0
                 break;
             case 1:
-                position2 = -700;
+                position2 = -widthOfExperienceImage;
                 document.getElementById("experienceImageContainer3").style.left = position2 + 'px';
                 break;
             case 2:
-                position2 = -1400;
+                position2 = -2 * widthOfExperienceImage;
                 document.getElementById("experienceImageContainer3").style.left = position2 + 'px';
                 break;
         }
@@ -100,10 +104,10 @@ function resetDotColor(company) {
             case 0:
                 document.getElementById("experienceLocationMysuit1").style.backgroundColor = '#2a26ff'
                 break;
-            case -700:
+            case -widthOfExperienceImage:
                 document.getElementById("experienceLocationMysuit2").style.backgroundColor = '#2a26ff'
                 break;
-            case -1400:
+            case -2 * widthOfExperienceImage:
                 document.getElementById("experienceLocationMysuit3").style.backgroundColor = '#2a26ff'
                 break;
         }
@@ -116,10 +120,10 @@ function resetDotColor(company) {
             case 0:
                 document.getElementById("experienceLocationUA1").style.backgroundColor = '#2a26ff'
                 break;
-            case -700:
+            case -widthOfExperienceImage:
                 document.getElementById("experienceLocationUA2").style.backgroundColor = '#2a26ff'
                 break;
-            case -1400:
+            case -2 * widthOfExperienceImage:
                 document.getElementById("experienceLocationUA3").style.backgroundColor = '#2a26ff'
                 break;
         }

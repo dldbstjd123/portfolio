@@ -4,7 +4,7 @@ var currentOption = 'about';
 var numberofOptions = 0;
 var movingPercentage = 0;
 var navigationClicked = 0;
-
+var widthOfExperienceImage = 0;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight
@@ -20,6 +20,17 @@ function onLoad() {
     sliderEffect();
     //document.getElementById('footerLayout').style.top = document.getElementById('bodyWrapper').clientHeight + 'px';
 }
+
+window.addEventListener("resize", function(event) {
+    console.log(document.body.clientWidth + ' wide by ' + document.body.clientHeight+' high');
+    widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
+    document.getElementById("experienceImageContainer1").style.left = 0
+    document.getElementById("experienceImageContainer3").style.left = 0
+    position = 0;
+    position2 = 0;
+    resetDotColor(0)
+    resetDotColor(2)
+})
 
 function delayedEffect() {
     setTimeout(function () {

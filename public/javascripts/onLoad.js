@@ -66,7 +66,7 @@ function moreEffect() {
         document.getElementById('aboutText').style.transform = 'translate(75px,75px) rotateY(45deg) rotate(-3deg)'
     },3500)
 }
-console.log(document.getElementsByClassName('experienceButtonLeft')[0])
+
 function sliderEffect(){
     setInterval(function(){
         let numberOfElements = document.getElementsByClassName('experienceButtonLeft').length

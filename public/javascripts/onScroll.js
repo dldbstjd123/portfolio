@@ -11,5 +11,4 @@ function scrollFunction() {
             document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
         }
     }
-    console.log(navigationClicked)
 }

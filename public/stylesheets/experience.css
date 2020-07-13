@@ -113,7 +113,12 @@
 #experienceLocationMysuit1{
     background-color: #2a26ff;
 }
+#experienceLocationUA1{
+    background-color: #2a26ff;
+}
 #mobileStores{
+    margin:0 auto;
+    max-width: 700px;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -136,4 +141,8 @@
     width: 696px;
     height:248px;
     padding: -2px;
+}
+#experienceListNameDescription{
+    font-size: 10px;
+    text-decoration: none;
 }

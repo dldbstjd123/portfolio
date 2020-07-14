@@ -59,6 +59,7 @@ function changeTransition(element, value) {
 }
 
 function moveSlider(company, clickedLocation) {
+    widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     if (company == 0) {
         switch (clickedLocation) {
             case 0:
@@ -96,6 +97,7 @@ function moveSlider(company, clickedLocation) {
     resetDotColor(company)
 }
 function resetDotColor(company) {
+    widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     if (company == 0) {
         document.getElementById("experienceLocationMysuit1").style.backgroundColor = '#bbb'
         document.getElementById("experienceLocationMysuit2").style.backgroundColor = '#bbb'

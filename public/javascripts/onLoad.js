@@ -14,6 +14,9 @@ function onLoad() {
     document.documentElement.scrollTop = 0;
     document.getElementById('introduction').style.opacity = '100'
     document.getElementById('introduction').style.top = '0px'
+    document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth + 'px';
+    console.log(`a = ${document.getElementById('bodyWrapper').style.marginRight}`)
+    console.log(`a = ${document.getElementById('leftLayout').clientWidth}`)
     delayedEffect();
     nameEffect();
     moreEffect();
@@ -22,7 +25,7 @@ function onLoad() {
 }
 
 window.addEventListener("resize", function(event) {
-    console.log(document.body.clientWidth + ' wide by ' + document.body.clientHeight+' high');
+    document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     document.getElementById("experienceImageContainer1").style.left = 0
     document.getElementById("experienceImageContainer3").style.left = 0

@@ -5,17 +5,21 @@
 
 #experienceHeader {
     margin: 15px 0;
-    font-size: 25px;
+    font-size: 45px;
     color: #2a26ff;
 }
 
 .experienceListName{
+    text-align: center;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 32px;
     text-decoration: underline;
 }
 .experienceListDescription{
-    width: 700px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    font-size:20px;
 }
 
 #experienceSliderContainer {
@@ -146,6 +150,12 @@
     height: 100%;
 }
 #experienceListNameDescription{
-    font-size: 10px;
+    font-size: 15px;
     text-decoration: none;
+    text-align: center;
+}
+.experienceTech{
+    margin-top:20px;
+    margin-bottom:70px;
+    text-align: center;
 }

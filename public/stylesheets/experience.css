@@ -132,7 +132,8 @@
     height:496px;
 }
 .experienceImagesUre{
-    float:left;
+    display:flex;
+    justify-content: space-evenly;
     margin:0px;
     padding:0px;
     width: 100%;

@@ -10,5 +10,9 @@ function scrollFunction() {
             currentOption = 'experience'
             document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
         }
+        if (document.body.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight || document.documentElement.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight) {
+            currentOption = 'skills'
+            document.getElementById('movingBar').style.marginLeft = 2 * movingPercentage + '%'
+        }
     }
 }

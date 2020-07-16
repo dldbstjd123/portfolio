@@ -8,7 +8,6 @@ function onMouseOver(option) {
     } else if (option == 'contact') {
         document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
     }
-    console.log('mouse over event')
 }
 function onMouseOut(option) {
     if (option != currentOption) {
@@ -22,7 +21,6 @@ function onMouseOut(option) {
             document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
         }
     }
-    console.log('mouse out event')
 }
 
 function onClick(option) {
@@ -34,11 +32,14 @@ function onClick(option) {
         document.getElementById('movingBar').style.marginLeft = '0%'
     } else if (option == 'experience') {
         currentOption = 'experience'
-        document.body.scrollTop = aboutSectionHeight; 
-        document.documentElement.scrollTop = aboutSectionHeight; 
+        console.log(aboutSectionHeight)
+        document.body.scrollTop =  aboutSectionHeight; 
+        document.documentElement.scrollTop =  aboutSectionHeight; 
         document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
     } else if (option == 'skills') {
         currentOption = 'skills'
+        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
+        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
         document.getElementById('movingBar').style.marginLeft = 2*movingPercentage + '%'
     } else if (option == 'contact') {
         currentOption = 'contact'

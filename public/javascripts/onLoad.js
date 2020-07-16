@@ -1,5 +1,7 @@
 var topLayoutHeight = 0;
 var aboutSectionHeight = 0;
+var experienceSectionHeight = 0;
+var skillsSectionHeight = 0;
 var currentOption = 'about';
 var numberofOptions = 0;
 var movingPercentage = 0;
@@ -8,6 +10,8 @@ var widthOfExperienceImage = 0;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight
+    experienceSectionHeight = document.getElementById('experienceSection').clientHeight
+    skillsSectionHeight = document.getElementById('skillsSection').clientHeight
     numberofOptions = document.getElementById('navigation').childElementCount;
     movingPercentage = 100 / numberofOptions
     document.body.scrollTop = 0;

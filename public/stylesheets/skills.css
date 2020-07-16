@@ -1,0 +1,10 @@
+#skillsSection {
+    min-height: 100vh;
+    margin-bottom: 20px;
+}
+
+#skillsHeader {
+    margin: 15px 0;
+    font-size: 45px;
+    color: #2a26ff;
+}

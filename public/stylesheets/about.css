@@ -1,6 +1,6 @@
 #aboutSectionContainer{
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
   }
   #aboutSection {
     height: 70vh;
@@ -51,6 +51,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    left:-75px;
   }
   #aboutRightSide > div {
     width:400px;

@@ -6,15 +6,15 @@ function scrollFunction() {
             currentOption = 'about'
             document.getElementById('movingBar').style.marginLeft = '0%'
         }
-        if (document.body.scrollTop > aboutSectionHeight - 50 || document.documentElement.scrollTop > aboutSectionHeight - 50) {
+        if (document.body.scrollTop > aboutSectionHeight || document.documentElement.scrollTop > aboutSectionHeight) {
             currentOption = 'experience'
             document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
         }
-        if (document.body.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight || document.documentElement.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight) {
+        if (document.body.scrollTop >  aboutSectionHeight + experienceSectionHeight || document.documentElement.scrollTop > aboutSectionHeight + experienceSectionHeight) {
             currentOption = 'skills'
             document.getElementById('movingBar').style.marginLeft = 2 * movingPercentage + '%'
         }
-        if (document.body.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight || document.documentElement.scrollTop > topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight) {
+        if (document.body.scrollTop > aboutSectionHeight + experienceSectionHeight + skillsSectionHeight || document.documentElement.scrollTop > aboutSectionHeight + experienceSectionHeight + skillsSectionHeight) {
             currentOption = 'contact'
             document.getElementById('movingBar').style.marginLeft = 3 * movingPercentage + '%'
         }

@@ -164,8 +164,8 @@ function validateForm(){
     let message = document.getElementsByClassName('inputContainer')[2].children[0].value
     $.ajax({
         type: "POST",
-        //url: "https://yo0on.com/email",
-        url: "http://localhost:1121/email",
+        url: "https://yo0on.com/email",
+        //url: "http://localhost:1121/email",
         data: {name, email, message},
         success: function(data){
             if(data.status == 'succeed'){

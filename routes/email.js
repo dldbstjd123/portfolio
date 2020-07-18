@@ -38,7 +38,9 @@ router.post('/', function(req, res, next) {
                     console.log(error)
                     res.json({status:'failed'})
                 }else{
-                    res.json({status:'succeed'})
+                    res.header("Access-Control-Allow-Origin", "*");
+                    res.header("Access-Controll-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+                    res.json({status:'succeed'});
                 }
             })
         }

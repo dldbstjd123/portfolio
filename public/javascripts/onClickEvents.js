@@ -156,3 +156,28 @@ function inputOut(input){
     }
     document.getElementsByClassName('contactBar2')[input].style.left = '-100%';
 }
+
+function validateForm(){
+    console.log('validating')
+    let name = document.getElementsByClassName('inputContainer')[0].children[0].value
+    let email = document.getElementsByClassName('inputContainer')[1].children[0].value
+    let message = document.getElementsByClassName('inputContainer')[2].children[0].value
+    $.ajax({
+        type: "POST",
+        url: "https://yo0on.com/email",
+        //url: "http://localhost:1121/email",
+        data: {name, email, message},
+        success: function(data){
+            if(data.status == 'succeed'){
+                document.getElementById('contactFormAfterSubmit').innerHTML = "Thank you!, Your message has been received.";
+                document.getElementsByClassName('inputContainer')[0].children[0].value = "";
+                document.getElementsByClassName('inputContainer')[1].children[0].value = "";
+                document.getElementsByClassName('inputContainer')[2].children[0].value = "";
+            }else if(data.status == 'failed'){
+                document.getElementById('contactFormAfterSubmit').innerHTML = "Sorry, please try it again later.";
+            }
+        },
+        dataType:'json'
+      });
+
+}

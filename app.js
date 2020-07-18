@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var emailRouter = require('./routes/email');
 
 var app = express();
 
@@ -19,9 +20,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/email', emailRouter);
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // catch 404 and forward to error handler

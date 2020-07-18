@@ -12,9 +12,9 @@ var aboutRightSideLoaded = false;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight;
-    experienceSectionHeight = document.getElementById('experienceSection').clientHeight - 50;
-    skillsSectionHeight = document.getElementById('skillsSection').clientHeight;
-    contactSectionHeight = document.getElementById('contactSection').clientHeight;
+    experienceSectionHeight = document.getElementById('experienceSection').offsetHeight;
+    skillsSectionHeight = document.getElementById('skillsSection').offsetHeight;
+    contactSectionHeight = document.getElementById('contactSection').offsetHeight;
     numberofOptions = document.getElementById('navigation').childElementCount;
     console.log(`topLayoutHeight = ${topLayoutHeight}`)
     console.log(`aboutSectionHeight = ${aboutSectionHeight}`)

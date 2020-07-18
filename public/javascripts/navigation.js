@@ -37,13 +37,13 @@ function onClick(option) {
         document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
     } else if (option == 'skills') {
         currentOption = 'skills'
-        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + 20 ; 
-        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + 20; 
+        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
+        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
         document.getElementById('movingBar').style.marginLeft = 2*movingPercentage + '%'
     } else if (option == 'contact') {
         currentOption = 'contact'
-        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight + 40; 
-        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight + 40; 
+        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight; 
+        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight; 
         document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
     }
     setTimeout(function(){

@@ -3,9 +3,21 @@
     <div id='contactContainer'>
         <div id='contactContainerHead'>Feel free to contact me!</div>
         <form id='contactForm'>
-            <input placeholder="Name" type="text" name="name" required>
-            <input placeholder="Enter Email" type="text" name="email" required>
-            <textarea placeholder="Enter Your Message" name="message" type="text" cols="30" rows="10"></textarea>
+            <div class='inputContainer'>
+                <input type="text" name="name" required onfocus="inputClicked(0)" onfocusout="inputOut(0)">
+                <label class="contactLabel">Name</label>
+                <div class='contactBar'><div class='contactBar2'></div></div>
+            </div>
+            <div class='inputContainer'>
+                <input type="text" name="email" required onfocus="inputClicked(1)" onfocusout="inputOut(1)">
+                <label class="contactLabel">Email</label>
+                <div class='contactBar'><div class='contactBar2'></div></div>
+            </div>
+            <div class='inputContainer'>
+                <textarea name="message" type="text" rows="10" onfocus="inputClicked(2)" onfocusout="inputOut(2)"></textarea>
+                <label class="contactLabel">Message</label>
+                <div class='contactBar'><div class='contactBar2'></div></div>
+            </div>
             <div id="contactFormAfterSubmit"></div>
             <div id='contactFormSendContainer'><input id="contactFormSend" type="submit" value="SUBMIT"></div>
         </form>

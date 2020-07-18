@@ -165,6 +165,7 @@ function validateForm(){
     $.ajax({
         type: "POST",
         url: "https://yo0on.com/email",
+        headers: { 'Access-Control-Allow-Origin': 'https://yo0on.com'},
         //url: "http://localhost:1121/email",
         data: {name, email, message},
         success: function(data){

@@ -7,6 +7,7 @@ var numberofOptions = 0;
 var movingPercentage = 0;
 var navigationClicked = 0;
 var widthOfExperienceImage = 0;
+var aboutRightSideLoaded = false;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight
@@ -82,6 +83,9 @@ function moreEffect() {
         document.getElementById('aboutImages').style.transform = 'translate(50px,50px) rotateY(45deg) rotate(-3deg)'
         document.getElementById('aboutText').style.opacity = '70';
         document.getElementById('aboutText').style.transform = 'translate(75px,75px) rotateY(45deg) rotate(-3deg)'
+        setTimeout(function(){
+            aboutRightSideLoaded = true;
+        }, 3000)
     },3500)
 }
 

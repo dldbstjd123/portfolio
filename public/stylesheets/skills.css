@@ -1,10 +1,59 @@
 #skillsSection {
     min-height: 100vh;
     margin-bottom: 20px;
+    position: relative;
 }
 
 #skillsHeader {
     margin: 15px 0;
     font-size: 45px;
     color: #2a26ff;
+}
+.skillsContainer{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin:auto;
+}
+.skillsContainer > div{
+    border: 1px solid black;
+    border-radius: 10%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 20px;
+}
+
+#skillsServer, #skillsMobile{
+    text-align: end;
+}
+
+.skillsListHead{
+    font-size: 25px;
+    margin:15px;
+}
+#skillsAbsolutePosition{
+    position: absolute;
+    width:100%;
+    margin:auto;
+    top:220px;
+    display:flex;
+    justify-content: center;
+    display:flex;
+    justify-content: center;
+}
+#skillsAbsolutePosition > div{
+    min-width: 250px;
+    min-height: 250px;;
+    background-color: white;
+    z-index: 2;
+    border:1px solid black;
+    border-radius: 10%;
+    text-align: center;
+
+}
+#skillsListHeadSecurity{
+    margin:15px 15px 0 15px;
+}
+#skillsListHeadSecurityDescription{
+    margin-bottom:15px;
 }

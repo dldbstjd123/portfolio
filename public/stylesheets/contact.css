@@ -1,0 +1,50 @@
+#contactSection {
+    min-height: 100vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#contactHeader {
+    margin: 15px 0;
+    font-size: 45px;
+    color: #2a26ff;
+}
+
+#contactContainer{
+    width:80%;
+    margin: 20px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactContainerHead{
+    font-size: 25px;
+    margin: 20px 0;
+}
+#contactForm{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    min-width: 400px;
+}
+
+#contactForm > input, #contactForm > textarea{
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+    background-color: #d2e0ff;
+    border:0;
+    padding:10px 15px;
+}
+
+#contactFormSendContainer{
+    display:flex;
+    justify-content: flex-end;
+}
+#contactFormSend{
+    width:100px;
+    height:50px;
+    border: 1px solid black;
+    background-color: white;
+}

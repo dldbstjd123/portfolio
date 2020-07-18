@@ -2,6 +2,7 @@ var topLayoutHeight = 0;
 var aboutSectionHeight = 0;
 var experienceSectionHeight = 0;
 var skillsSectionHeight = 0;
+var contactSectionHeight = 0;
 var currentOption = 'about';
 var numberofOptions = 0;
 var movingPercentage = 0;
@@ -10,9 +11,10 @@ var widthOfExperienceImage = 0;
 var aboutRightSideLoaded = false;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
-    aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight
-    experienceSectionHeight = document.getElementById('experienceSection').clientHeight
-    skillsSectionHeight = document.getElementById('skillsSection').clientHeight
+    aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight;
+    experienceSectionHeight = document.getElementById('experienceSection').clientHeight;
+    skillsSectionHeight = document.getElementById('skillsSection').clientHeight;
+    contactSectionHeight = document.getElementById('contactSection').clientHeight;
     numberofOptions = document.getElementById('navigation').childElementCount;
     movingPercentage = 100 / numberofOptions
     document.body.scrollTop = 0;
@@ -20,8 +22,6 @@ function onLoad() {
     document.getElementById('introduction').style.opacity = '100'
     document.getElementById('introduction').style.top = '0px'
     document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth + 'px';
-    console.log(`a = ${document.getElementById('bodyWrapper').style.marginRight}`)
-    console.log(`a = ${document.getElementById('leftLayout').clientWidth}`)
     delayedEffect();
     nameEffect();
     moreEffect();

@@ -32,20 +32,21 @@ function onClick(option) {
         document.getElementById('movingBar').style.marginLeft = '0%'
     } else if (option == 'experience') {
         currentOption = 'experience'
-        console.log(aboutSectionHeight)
         document.body.scrollTop =  aboutSectionHeight; 
         document.documentElement.scrollTop =  aboutSectionHeight; 
         document.getElementById('movingBar').style.marginLeft = movingPercentage + '%'
     } else if (option == 'skills') {
         currentOption = 'skills'
-        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
-        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight; 
+        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + 20 ; 
+        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + 20; 
         document.getElementById('movingBar').style.marginLeft = 2*movingPercentage + '%'
     } else if (option == 'contact') {
         currentOption = 'contact'
+        document.body.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight + 40; 
+        document.documentElement.scrollTop = topLayoutHeight + aboutSectionHeight + experienceSectionHeight + skillsSectionHeight + 40; 
         document.getElementById('movingBar').style.marginLeft = 3*movingPercentage + '%'
     }
     setTimeout(function(){
         navigationClicked = 0;
-    },1500)
+    },1000)
 }

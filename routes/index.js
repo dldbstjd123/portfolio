@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var mobile = require('is-mobile');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

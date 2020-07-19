@@ -2,7 +2,7 @@
     display:block;
   }
   #aboutSection {
-    height: 70vh;
+    height: 60vh;
     min-width:450px;
     display: flex;
     flex-direction: column;
@@ -200,7 +200,7 @@
   }
   #moreToExperience{
     display: flex;
-    height:20vh;
+    height:30vh;
     justify-content: center;
     align-items: center;
   }

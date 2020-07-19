@@ -26,6 +26,7 @@ function onLoad() {
     document.getElementById('introduction').style.opacity = '100'
     document.getElementById('introduction').style.top = '0px'
     document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth + 'px';
+    document.getElementById('loadingSection').style.display = 'none';
     delayedEffect();
     nameEffect();
     moreEffect();

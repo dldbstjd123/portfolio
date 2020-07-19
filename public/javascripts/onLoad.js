@@ -30,7 +30,11 @@ function onLoad() {
 }
 
 window.addEventListener("resize", function(event) {
-    document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth
+    if(document.body.clientWidth < 750){
+        document.getElementById('bodyWrapper').style.marginRight = 0;
+    }else{
+        document.getElementById('bodyWrapper').style.marginRight = document.getElementById('leftLayout').clientWidth
+    };
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     document.getElementById("experienceImageContainer1").style.left = 0
     document.getElementById("experienceImageContainer3").style.left = 0

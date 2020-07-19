@@ -1,10 +1,10 @@
 #aboutSectionContainer{
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   #aboutSection {
     height: 70vh;
-    min-width:600px;
+    min-width:450px;
     display: flex;
     flex-direction: column;
     justify-content: center;

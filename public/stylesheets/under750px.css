@@ -1,9 +1,10 @@
 /* under 750px width*/
-@media only screen and (max-width:850px){
+@media only screen and (max-width:750px){
     #main {
-      margin-left: 10%;
-      width:90%;
       min-height:100%;
+    }
+    #bodyWrapper{
+      margin-right:0;
     }
     #logo {
       width: 35px;
@@ -12,7 +13,22 @@
       font-size: 20px;
       margin:15px;
     }
+    #topLayout {
+      justify-content: center;
+    }
+    #topLayout {
+      justify-content: flex-start;
+    }
+    #bar {
+      width:100%;
+    }
     #navigation {
-      font-size: 13px;
+      width:100%;
+    }
+    #introduction{
+     
+    }
+    #experienceSliderContainer{
+      width:100%;
     }
   }

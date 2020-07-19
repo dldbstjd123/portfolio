@@ -1,8 +1,5 @@
 #contactSection {
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 600px;
     margin-bottom: 20px;
     position: relative;
 }

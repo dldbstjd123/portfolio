@@ -21,7 +21,7 @@
 .skillsContainer > div{
     border: 1px solid black;
     border-radius: 10%;
-    min-width: 250px;
+    width:20%;
     min-height: 250px;
     margin: 20px;
 }
@@ -49,8 +49,8 @@
     justify-content: center;
 }
 #skillsAbsolutePosition > div{
-    min-width: 350px;
-    min-height: 350px;;
+    width: 20%;
+    min-height: 250px;
     background-color: white;
     z-index: 2;
     border:1px solid black;

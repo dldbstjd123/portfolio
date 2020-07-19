@@ -9,7 +9,7 @@
 }
 
 #skillsHeader {
-    font-size: 45px;
+    font-size: 55px;
     color: #2a26ff;
 }
 .skillsContainer{
@@ -31,11 +31,12 @@
 }
 
 .skillsListHead{
-    font-size: 25px;
+    font-size: 45px;
     margin:15px;
 }
 .skillsLists{
     margin:0 10px;
+    font-size:35px;
 }
 #skillsAbsolutePosition{
     position: absolute;
@@ -48,8 +49,8 @@
     justify-content: center;
 }
 #skillsAbsolutePosition > div{
-    min-width: 250px;
-    min-height: 250px;;
+    min-width: 350px;
+    min-height: 350px;;
     background-color: white;
     z-index: 2;
     border:1px solid black;
@@ -69,7 +70,7 @@
     justify-content: space-between;
 }
 .skillListImage{
-    width:75px;
-    height:75px;
+    width:150px;
+    height:150px;
     margin:0 10px;
 }

@@ -3,14 +3,14 @@
 }
 
 #experienceHeader {
-    font-size: 45px;
+    font-size: 55px;
     color: #2a26ff;
 }
 
 .experienceListName{
     text-align: center;
     margin-top: 15px;
-    font-size: 32px;
+    font-size: 45px;
     text-decoration: underline;
 }
 .experienceListDescription{

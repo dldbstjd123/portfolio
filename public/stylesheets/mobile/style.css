@@ -70,7 +70,7 @@ body {
 #topLayout {
   position: fixed;
   width: 90%;
-  height: 70px;
+  height: 150px;
   display: flex;
   justify-content: flex-end;
   background-color: rgba(255, 255, 255, 0.97);

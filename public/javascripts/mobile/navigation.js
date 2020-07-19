@@ -15,8 +15,8 @@ function onClick(option) {
         document.getElementsByClassName('movingBar')[0].style.backgroundColor = '#2a26ff';
     } else if (option == 'experience') {
         currentOption = 'experience'
-        document.body.scrollTop = aboutSectionHeight;
-        document.documentElement.scrollTop = aboutSectionHeight;
+        document.body.scrollTop = aboutSectionHeight - topLayoutHeight;
+        document.documentElement.scrollTop = aboutSectionHeight - topLayoutHeight;
         document.getElementsByClassName('movingBar')[1].style.backgroundColor = '#2a26ff';
     } else if (option == 'skills') {
         currentOption = 'skills'

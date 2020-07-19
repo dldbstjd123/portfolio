@@ -211,8 +211,8 @@
     align-items: center;
     border: 2px solid black;
     color:black;
-    height:200px;
-    width: 200px;
+    height:150px;
+    width: 150px;
     font-size: 30px;
     transition: ease-in-out 1.0s;
     -webkit-transition: ease-in-out 1.0s;

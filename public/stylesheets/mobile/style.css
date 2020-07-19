@@ -122,8 +122,8 @@ body {
   height: 3px;
 }
 
-#movingBar {
-  background-color: #2a26ff;
+.movingBar {
+  background-color: white;
   width: 25%;
   height: 3px;
   margin-left: 0px;

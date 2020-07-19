@@ -29,7 +29,7 @@
   #introduction2 {
     opacity: 0;
     position: relative;
-    left:400px;
+    left:200px;
     font-size:40px;
     font-family: 'PT Sans', sans-serif;
     transition: ease-in-out 1.0s;

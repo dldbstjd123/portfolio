@@ -4,8 +4,7 @@ var mobile = require('is-mobile');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(req.device.type.toUpperCase())
-  if(mobile()){
+  if(req.device.type.toUpperCase() == 'PHONE'){
     res.render('index_mobile', { title: 'Yoon Jung' });
   }else{
     res.render('index', { title: 'Yoon Jung' });

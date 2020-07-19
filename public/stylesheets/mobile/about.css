@@ -219,8 +219,3 @@
     -moz-transition: ease-in-out 1.0s;
     -o-trnasition: ease-in-out 1.0s;
   }
-  #moreIcon:hover {
-    color: white;
-    background-color: #2a26ff;
-    border: 2px solid #2a26ff
-  }

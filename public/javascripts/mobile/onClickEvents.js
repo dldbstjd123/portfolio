@@ -134,7 +134,7 @@ function resetDotColor(company) {
 
 function inputClicked(input){
         document.getElementsByClassName('contactLabel')[input].style.top = '-28px';
-        document.getElementsByClassName('contactLabel')[input].style.fontSize = '15px';
+        document.getElementsByClassName('contactLabel')[input].style.fontSize = '35px';
         document.getElementsByClassName('contactLabel')[input].style.color = 'gray';
         document.getElementsByClassName('contactBar2')[input].style.left = '0';
         document.getElementsByClassName('inputContainer')[input].children[0].focus();
@@ -142,17 +142,17 @@ function inputClicked(input){
 function inputOut(input){
     if(input == 0 && document.getElementsByClassName('inputContainer')[input].children[0].value ==""){
         document.getElementsByClassName('contactLabel')[input].style.top = '10px';
-        document.getElementsByClassName('contactLabel')[input].style.fontSize = '25px';
+        document.getElementsByClassName('contactLabel')[input].style.fontSize = '45px';
         document.getElementsByClassName('contactLabel')[input].style.color = 'black';
     }
     if(input == 1 && document.getElementsByClassName('inputContainer')[input].children[0].value ==""){
         document.getElementsByClassName('contactLabel')[input].style.top = '10px';
-        document.getElementsByClassName('contactLabel')[input].style.fontSize = '25px';
+        document.getElementsByClassName('contactLabel')[input].style.fontSize = '45px';
         document.getElementsByClassName('contactLabel')[input].style.color = 'black';
     }
     if(input == 2 && document.getElementsByClassName('inputContainer')[input].children[0].value ==""){
         document.getElementsByClassName('contactLabel')[input].style.top = '10px';
-        document.getElementsByClassName('contactLabel')[input].style.fontSize = '25px';
+        document.getElementsByClassName('contactLabel')[input].style.fontSize = '45px';
         document.getElementsByClassName('contactLabel')[input].style.color = 'black';
     }
     document.getElementsByClassName('contactBar2')[input].style.left = '-100%';

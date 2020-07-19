@@ -137,6 +137,7 @@ function inputClicked(input){
         document.getElementsByClassName('contactLabel')[input].style.fontSize = '15px';
         document.getElementsByClassName('contactLabel')[input].style.color = 'gray';
         document.getElementsByClassName('contactBar2')[input].style.left = '0';
+        document.getElementsByClassName('inputContainer')[input].children[0].focus();
 }
 function inputOut(input){
     if(input == 0 && document.getElementsByClassName('inputContainer')[input].children[0].value ==""){

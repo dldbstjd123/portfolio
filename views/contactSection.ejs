@@ -5,21 +5,21 @@
         <form id='contactForm'>
             <div class='inputContainer'>
                 <input type="text" name="name" required onfocus="inputClicked(0)" onfocusout="inputOut(0)">
-                <label class="contactLabel">Name</label>
+                <label class="contactLabel" onclick="inputClicked(0)">Name</label>
                 <div class='contactBar'><div class='contactBar2'></div></div>
             </div>
             <div class='inputContainer'>
                 <input type="text" name="email" required onfocus="inputClicked(1)" onfocusout="inputOut(1)">
-                <label class="contactLabel">Email</label>
+                <label class="contactLabel" onclick="inputClicked(1)">Email</label>
                 <div class='contactBar'><div class='contactBar2'></div></div>
             </div>
             <div class='inputContainer'>
                 <textarea name="message" type="text" rows="10" onfocus="inputClicked(2)" onfocusout="inputOut(2)"></textarea>
-                <label class="contactLabel">Message</label>
+                <label class="contactLabel" onclick="inputClicked(2)">Message</label>
                 <div class='contactBar'><div class='contactBar2'></div></div>
             </div>
             <div id="contactFormAfterSubmit"></div>
-            <div id='contactFormSendContainer' onclick="validateForm()"><input id="contactFormSend" type="button" value="SEND"></div>
+            <div id='contactFormSendContainer'><input id="contactFormSend" type="button" value="SEND" onclick="validateForm()"></div>
         </form>
     </div>
 </div>

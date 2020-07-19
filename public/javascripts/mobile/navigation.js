@@ -30,6 +30,10 @@ function onClick(option) {
         document.getElementsByClassName('movingBar')[3].style.backgroundColor = '#2a26ff';
     }
     setTimeout(function () {
+        document.getElementsByClassName('movingBar')[0].style.backgroundColor = 'white';
+        document.getElementsByClassName('movingBar')[1].style.backgroundColor = 'white';
+        document.getElementsByClassName('movingBar')[2].style.backgroundColor = 'white';
+        document.getElementsByClassName('movingBar')[3].style.backgroundColor = 'white';
         navigationClicked = 0;
     }, 1000)
 }

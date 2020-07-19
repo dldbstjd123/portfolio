@@ -158,27 +158,48 @@ function inputOut(input){
 }
 
 function validateForm(){
-    console.log('validating')
     let name = document.getElementsByClassName('inputContainer')[0].children[0].value
     let email = document.getElementsByClassName('inputContainer')[1].children[0].value
     let message = document.getElementsByClassName('inputContainer')[2].children[0].value
-    $.ajax({
-        type: "POST",
-        url: "https://yo0on.com/email",
-        headers: { 'Access-Control-Allow-Origin': '*'},
-        //url: "http://localhost:1121/email",
-        data: {name, email, message},
-        success: function(data){
-            if(data.status == 'succeed'){
-                document.getElementById('contactFormAfterSubmit').innerHTML = "Thank you!, Your message has been received.";
-                document.getElementsByClassName('inputContainer')[0].children[0].value = "";
-                document.getElementsByClassName('inputContainer')[1].children[0].value = "";
-                document.getElementsByClassName('inputContainer')[2].children[0].value = "";
-            }else if(data.status == 'failed'){
-                document.getElementById('contactFormAfterSubmit').innerHTML = "Sorry, please try it again later.";
-            }
-        },
-        dataType:'json'
-      });
+    if(name.length < 1){
+        document.getElementsByClassName('inputContainer')[0].children[0].focus();
+        document.getElementsByClassName('contactLabel')[0].innerHTML = 'Please Insert Name';
+    }else if(email.length < 1){
+        document.getElementsByClassName('inputContainer')[1].children[0].focus();
+        document.getElementsByClassName('contactLabel')[1].innerHTML = 'Please Insert Email';
+    }else if(validateEmail(email) == false){
+        document.getElementsByClassName('inputContainer')[1].children[0].focus();
+        document.getElementsByClassName('contactLabel')[1].innerHTML = 'Please Insert Valid Email Address';
+    }else if(message.length <1){
+        document.getElementsByClassName('inputContainer')[2].children[0].focus();
+        document.getElementsByClassName('contactLabel')[2].innerHTML = 'Please Insert Message';
+    }else{
+        document.getElementsByClassName('contactLabel')[0].innerHTML = 'Name';
+        document.getElementsByClassName('contactLabel')[1].innerHTML = 'Email';
+        document.getElementsByClassName('contactLabel')[2].innerHTML = 'Message';
+        $.ajax({
+            type: "POST",
+            url: "https://yo0on.com/email",
+            headers: { 'Access-Control-Allow-Origin': '*'},
+            //url: "http://localhost:1121/email",
+            data: {name, email, message},
+            success: function(data){
+                if(data.status == 'succeed'){
+                    document.getElementById('contactFormAfterSubmit').innerHTML = "Thank you!, Your message has been received.";
+                    document.getElementsByClassName('inputContainer')[0].children[0].value = "";
+                    document.getElementsByClassName('inputContainer')[1].children[0].value = "";
+                    document.getElementsByClassName('inputContainer')[2].children[0].value = "";
+                }else if(data.status == 'failed'){
+                    document.getElementById('contactFormAfterSubmit').innerHTML = "Sorry, please try it again later.";
+                }
+            },
+            dataType:'json'
+          });
+    }
 
+}
+
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }

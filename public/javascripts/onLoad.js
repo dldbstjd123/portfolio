@@ -16,11 +16,6 @@ function onLoad() {
     skillsSectionHeight = document.getElementById('skillsSection').scrollHeight;
     contactSectionHeight = document.getElementById('contactSection').scrollHeight;
     numberofOptions = document.getElementById('navigation').childElementCount;
-    console.log(`topLayoutHeight = ${topLayoutHeight}`)
-    console.log(`aboutSectionHeight = ${aboutSectionHeight}`)
-    console.log(`experienceSectionHeight = ${experienceSectionHeight}`)
-    console.log(`skillsSectionHeight = ${skillsSectionHeight}`)
-    console.log(`contactSectionHeight = ${contactSectionHeight}`)
     movingPercentage = 100 / numberofOptions
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

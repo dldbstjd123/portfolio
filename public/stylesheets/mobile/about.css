@@ -49,8 +49,9 @@
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
-    left:-75px;
+    position: absolute;
+    left:150px;
+    z-index: -2;
   }
   #aboutRightSide > div {
     width:400px;

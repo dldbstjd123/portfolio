@@ -9,6 +9,7 @@ var movingPercentage = 0;
 var navigationClicked = 0;
 var widthOfExperienceImage = 0;
 var aboutRightSideLoaded = false;
+var mobileUser = false;
 function onLoad() {
     topLayoutHeight = document.getElementById('topLayout').clientHeight + document.getElementById('topBar').clientHeight;
     aboutSectionHeight = document.getElementById('aboutSection').clientHeight + document.getElementById('moreToExperience').clientHeight;
@@ -16,6 +17,9 @@ function onLoad() {
     skillsSectionHeight = document.getElementById('skillsSection').scrollHeight;
     contactSectionHeight = document.getElementById('contactSection').scrollHeight;
     numberofOptions = document.getElementById('navigation').childElementCount;
+    if(screen.witdh <= 480){
+        mobileUser = true;
+    }
     movingPercentage = 100 / numberofOptions
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

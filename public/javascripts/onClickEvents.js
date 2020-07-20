@@ -178,7 +178,6 @@ function validateForm(){
         document.getElementsByClassName('contactLabel')[0].innerHTML = 'Name';
         document.getElementsByClassName('contactLabel')[1].innerHTML = 'Email';
         document.getElementsByClassName('contactLabel')[2].innerHTML = 'Message';
-        console.log(window.location.origin)
         $.ajax({
             type: "POST",
             url: window.location.origin + "/email",

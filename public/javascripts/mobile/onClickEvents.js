@@ -180,7 +180,7 @@ function validateForm(){
         document.getElementsByClassName('contactLabel')[2].innerHTML = 'Message';
         $.ajax({
             type: "POST",
-            url: "https://yo0on.com/email",
+            url: window.location.origin + "/email",
             headers: { 'Access-Control-Allow-Origin': '*'},
             //url: "http://localhost:1121/email",
             data: {name, email, message},

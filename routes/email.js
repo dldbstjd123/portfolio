@@ -20,13 +20,12 @@ router.post('/', async function (req, res, next) {
         subject: 'Yoon Jung',
         html: `<h1>Hello ${req.body.name}, </h1><p>Thank you for contacting me! I will reach out to you within 2 business days.</p>`
     };
-    let sentStatus1 = await transporter.sendMail(mailOptions, function (error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error)
             res.json({ status: 'failed' })
-            return 0
         } else {
-            return 1
+
         }
     })
     mailOptions = {
@@ -37,20 +36,16 @@ router.post('/', async function (req, res, next) {
         replyTo: req.body.email,
         html: `<h1> ${req.body.name} has sent you a message</h1><p>Message: ${req.body.message}</p>`
     };
-    let sentStatus2 = await transporter.sendMail(mailOptions, function (error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error)
             res.json({ status: 'failed' })
-            return 0
         } else {
-            return 1
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Controll-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            res.json({ status: 'succeed' });
         }
     })
-    if (sentStatus1 == 1 && sentStatus2 == 1) {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Controll-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        res.json({ status: 'succeed' });
-    }
 });
 
 module.exports = router;

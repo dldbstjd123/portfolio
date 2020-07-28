@@ -25,10 +25,7 @@
     width:45%;
     min-height: 250px;
     margin: 20px;
-}
-
-#skillsServer, #skillsMobile{
-    text-align: end;
+    text-align: center;
 }
 
 .skillsListHead{

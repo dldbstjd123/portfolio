@@ -113,6 +113,7 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 #experienceLocationMysuit1{
     background-color: #2a26ff;

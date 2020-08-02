@@ -1,5 +1,5 @@
-/* under 900px width*/
-@media only screen and (max-width:900px){
+/* under 980px width*/
+@media only screen and (max-width:980px){
     #main {
       margin-left: 10%;
       width:90%;

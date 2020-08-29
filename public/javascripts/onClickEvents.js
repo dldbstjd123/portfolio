@@ -5,8 +5,10 @@ function onClickLogo() {
 //Reseting Experience Image Position
 var position = 0;
 var position2 = 0;
+var position3 = 0;
 
 function slideToLeft(company) {
+    console.log('slideToLeft')
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     console.log(widthOfExperienceImage)
     if (company == 0) {
@@ -27,10 +29,20 @@ function slideToLeft(company) {
             position2 = -2 * widthOfExperienceImage
         }
     }
+    if (company == 3) {
+        position3 += widthOfExperienceImage
+        document.getElementById("experienceImageContainer4").style.left = position3 + 'px';
+        if (position3 == widthOfExperienceImage) {
+            changeTransition(document.getElementById("experienceImageContainer4").style, 'left 0')
+            document.getElementById("experienceImageContainer4").style.left = -3 * widthOfExperienceImage + 'px';
+            position3 = -3 * widthOfExperienceImage
+        }
+    }
     resetDotColor(company)
 }
 
 function slideToRight(company) {
+    console.log('slideToRight')
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     if (company == 0) {
         position -= widthOfExperienceImage
@@ -50,6 +62,15 @@ function slideToRight(company) {
             position2 = 0
         }
     }
+    if (company == 3) {
+        position3 -= widthOfExperienceImage
+        document.getElementById("experienceImageContainer4").style.left = position3 + 'px';
+        if (position3 == -4 * widthOfExperienceImage) {
+            changeTransition(document.getElementById("experienceImageContainer4").style, 'left 0')
+            document.getElementById("experienceImageContainer4").style.left = 0 + 'px';
+            position3 = 0
+        }
+    }
     resetDotColor(company)
 }
 
@@ -59,6 +80,7 @@ function changeTransition(element, value) {
 }
 
 function moveSlider(company, clickedLocation) {
+    console.log('moveSlider')
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
     if (company == 0) {
         switch (clickedLocation) {
@@ -91,6 +113,28 @@ function moveSlider(company, clickedLocation) {
             case 2:
                 position2 = -2 * widthOfExperienceImage;
                 document.getElementById("experienceImageContainer3").style.left = position2 + 'px';
+                break;
+        }
+    }
+    if (company == 3) {
+        console.log('pass')
+        switch (clickedLocation) {
+            case 0:
+                position3 = 0
+                document.getElementById("experienceImageContainer4").style.left = 0 + 'px';
+                position3 = 0
+                break;
+            case 1:
+                position3 = -widthOfExperienceImage;
+                document.getElementById("experienceImageContainer4").style.left = position3 + 'px';
+                break;
+            case 2:
+                position3 = -2 * widthOfExperienceImage;
+                document.getElementById("experienceImageContainer4").style.left = position3 + 'px';
+                break;
+            case 3:
+                position3 = -3 * widthOfExperienceImage;
+                document.getElementById("experienceImageContainer4").style.left = position3 + 'px';
                 break;
         }
     }
@@ -127,6 +171,26 @@ function resetDotColor(company) {
                 break;
             case -2 * widthOfExperienceImage:
                 document.getElementById("experienceLocationUA3").style.backgroundColor = '#2a26ff'
+                break;
+        }
+    }
+    if (company == 3) {
+        document.getElementById("experienceLocationUAWeb1").style.backgroundColor = '#bbb'
+        document.getElementById("experienceLocationUAWeb2").style.backgroundColor = '#bbb'
+        document.getElementById("experienceLocationUAWeb3").style.backgroundColor = '#bbb'
+        document.getElementById("experienceLocationUAWeb4").style.backgroundColor = '#bbb'
+        switch (position3) {
+            case 0:
+                document.getElementById("experienceLocationUAWeb1").style.backgroundColor = '#2a26ff'
+                break;
+            case -widthOfExperienceImage:
+                document.getElementById("experienceLocationUAWeb2").style.backgroundColor = '#2a26ff'
+                break;
+            case -2 * widthOfExperienceImage:
+                document.getElementById("experienceLocationUAWeb3").style.backgroundColor = '#2a26ff'
+                break;
+            case -3 * widthOfExperienceImage:
+                document.getElementById("experienceLocationUAWeb4").style.backgroundColor = '#2a26ff'
                 break;
         }
     }

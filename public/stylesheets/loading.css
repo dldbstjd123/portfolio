@@ -1,5 +1,7 @@
 #loadingSection {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,19 +12,19 @@
     z-index: 500;
 }
 
-#loadingSVG{
+#loadingSVG {
     animation: 2s linear infinite svg-animation;
 }
 @keyframes svg-animation {
     0% {
-        transform:rotateZ(0deg);
+        transform: rotateZ(0deg);
     }
-    100%{
-        transform:rotateZ(360deg)
+    100% {
+        transform: rotateZ(360deg);
     }
 }
 
-#loadingCircle{
+#loadingCircle {
     animation: 1.4s ease-in-out infinite both circle-animation;
     fill: transparent;
     stroke: blue;
@@ -32,19 +34,19 @@
     transform-origin: 50% 50%;
     stroke-dashoffset: 60;
 }
-@keyframes circle-animation{
+@keyframes circle-animation {
     0%,
-    25%{
+    25% {
         stroke-dashoffset: 60;
-        transform:rotate(0);
+        transform: rotate(0);
     }
     50%,
-    75%{
-        stroke-dashoffset:20;
-        transform:rotate(45deg);
+    75% {
+        stroke-dashoffset: 20;
+        transform: rotate(45deg);
     }
-    100%{
+    100% {
         stroke-dashoffset: 60;
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }

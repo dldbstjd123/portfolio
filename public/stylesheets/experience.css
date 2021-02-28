@@ -7,52 +7,52 @@
     color: #2a26ff;
 }
 
-.experienceListName{
+.experienceListName {
     text-align: center;
     margin-top: 15px;
     font-size: 32px;
     text-decoration: underline;
 }
-.experienceListDescription{
+.experienceListDescription {
     text-align: center;
     margin: 20px auto;
     width: 80%;
-    font-size:20px;
+    font-size: 20px;
 }
 
 #experienceSliderContainer {
     width: 80%;
     height: 500px;
     margin: 0 auto;
-    overflow:hidden;
+    overflow: hidden;
     text-align: center;
-    position:relative;
+    position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
     -o-transition: left 2s;
 }
-.buttonContainer{
+.buttonContainer {
     position: absolute;
-    top:50%;
+    top: 50%;
     z-index: 1;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:90%;
+    width: 90%;
 }
-.sliderContainer{
+.sliderContainer {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin:15px 0;
+    margin: 15px 0;
 }
 
 .experienceImageContainer {
     width: 300%;
     height: 500px;
-    left:0px;
-    display:flex;
+    left: 0px;
+    display: flex;
     flex-direction: row;
     position: relative;
     transition: left 1s;
@@ -60,106 +60,135 @@
     -moz-transition: left 1s;
     -o-transition: left 1s;
 }
-.experienceImages{
-    float:left;
-    margin:0px;
-    padding:0px;
+.experienceImages {
+    float: left;
+    margin: 0px;
+    padding: 0px;
     width: 33.33%;
-    height:496px;
+    height: 496px;
 }
 .experienceButtonLeft {
     position: relative;
-    width:50px;
-    height:50px;
-    border-top:7px solid black;
-    border-left:7px solid black;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    right:0px;
+    width: 50px;
+    height: 50px;
+    border-top: 7px solid black;
+    border-left: 7px solid black;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    right: 0px;
     transition: right 0.5s;
     -webkit-transition: right 0.5s;
     -moz-transition: right 0.5s;
     -o-transition: right 0.5s;
-    user-select:none;
+    user-select: none;
 }
-.experienceButtonRight{
+.experienceButtonRight {
     position: relative;
-    width:50px;
-    height:50px;
-    border-top:7px solid black;
-    border-right:7px solid black;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    left:0px;
+    width: 50px;
+    height: 50px;
+    border-top: 7px solid black;
+    border-right: 7px solid black;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    left: 0px;
     transition: left 0.5s;
     -webkit-transition: left 0.5s;
     -moz-transition: left 0.5s;
     -o-transition: left 0.5s;
-    user-select:none;
+    user-select: none;
 }
 
-.experienceImageLocation{
-    display:flex;
+.experienceImageLocation {
+    display: flex;
     justify-content: center;
 }
-.experienceImageLocation span{
+.experienceImageLocation span {
     height: 10px;
     width: 10px;
-    margin:0 10px;
+    margin: 0 10px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
 }
-#experienceLocationMysuit1{
+#experienceLocationMysuit1 {
     background-color: #2a26ff;
 }
-#experienceLocationUA1{
+#experienceLocationUA1 {
     background-color: #2a26ff;
 }
-#experienceLocationUAWeb1{
+#experienceLocationUAWeb1 {
     background-color: #2a26ff;
 }
-#mobileStores{
-    margin:0 auto;
+#experienceLocationAS1 {
+    background-color: #2a26ff;
+}
+#experienceLocationAdplin1 {
+    background-color: #2a26ff;
+}
+#mobileStores {
+    margin: 0 auto;
     max-width: 700px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-#experienceImageContainer2{
-    display:flex;
+#experienceImageContainer2 {
+    display: flex;
     flex-direction: column;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    height:496px;
+    height: 496px;
 }
-.experienceImagesUre{
-    display:flex;
+.experienceImagesUre {
+    display: flex;
     justify-content: space-evenly;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    height:248px;
+    height: 248px;
     padding: -2px;
 }
-.experienceIndividualImagesUre{
-    width:23%;
+.experienceIndividualImagesUre {
+    width: 23%;
     max-width: 180px;
     height: 100%;
 }
-#experienceListNameDescription{
+#experienceListNameDescription {
     font-size: 15px;
     text-decoration: none;
     text-align: center;
 }
-.experienceTech{
-    margin-top:20px;
-    padding-bottom:70px;
+.experienceTech {
+    margin-top: 20px;
+    padding-bottom: 70px;
     text-align: center;
+}
+#experienceImageContainer4 {
+    width: 400%;
+}
+#experienceImageContainer4 > img {
+    width: 25%;
+}
+#experienceImageContainer5 {
+    width: 400%;
+}
+#experienceImageContainer5 > img {
+    width: 25%;
+}
+#experienceImageContainer6 {
+    width: 400%;
+}
+#experienceImageContainer6 > img {
+    width: 25%;
+}
+.expereinceAtag {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
 }

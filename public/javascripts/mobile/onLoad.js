@@ -50,11 +50,13 @@ window.addEventListener("resize", function(event) {
     position = 0
     position2 = 0
     position3 = 0
-    position3 = 4
+    position4 = 0
+    position5 = 0
     resetDotColor(0)
     resetDotColor(2)
     resetDotColor(3)
     resetDotColor(4)
+    resetDotColor(5)
 })
 
 function delayedEffect() {

@@ -36,12 +36,25 @@ function onLoad() {
 
 window.addEventListener("resize", function(event) {
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
+    //document.getElementById("experienceImageContainer1").style.left = 0
+    //document.getElementById("experienceImageContainer3").style.left = 0
+    //position = 0;
+    //position2 = 0;
+    //resetDotColor(0)
+    //resetDotColor(2)
     document.getElementById("experienceImageContainer1").style.left = 0
     document.getElementById("experienceImageContainer3").style.left = 0
-    position = 0;
-    position2 = 0;
+    document.getElementById("experienceImageContainer4").style.left = 0
+    document.getElementById("experienceImageContainer5").style.left = 0
+    document.getElementById("experienceImageContainer6").style.left = 0
+    position = 0
+    position2 = 0
+    position3 = 0
+    position3 = 4
     resetDotColor(0)
     resetDotColor(2)
+    resetDotColor(3)
+    resetDotColor(4)
 })
 
 function delayedEffect() {

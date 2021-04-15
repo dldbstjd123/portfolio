@@ -5,6 +5,9 @@ function onClickLogo() {
 //Reseting Experience Image Position
 var position = 0;
 var position2 = 0;
+var position3 = 0
+var position4 = 0
+var position5 = 0
 
 function slideToLeft(company) {
     widthOfExperienceImage = document.getElementsByClassName('experienceImages')[0].clientWidth;
@@ -25,6 +28,48 @@ function slideToLeft(company) {
             changeTransition(document.getElementById("experienceImageContainer3").style, 'left 0')
             document.getElementById("experienceImageContainer3").style.left = -2 * widthOfExperienceImage + 'px';
             position2 = -2 * widthOfExperienceImage
+        }
+    }
+    if (company == 3) {
+        position3 += widthOfExperienceImage
+        document.getElementById("experienceImageContainer4").style.left =
+            position3 + "px"
+        if (position3 == widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer4").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer4").style.left =
+                -3 * widthOfExperienceImage + "px"
+            position3 = -3 * widthOfExperienceImage
+        }
+    }
+    if (company == 4) {
+        position4 += widthOfExperienceImage
+        document.getElementById("experienceImageContainer5").style.left =
+            position4 + "px"
+        if (position4 == widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer5").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer5").style.left =
+                -3 * widthOfExperienceImage + "px"
+            position4 = -3 * widthOfExperienceImage
+        }
+    }
+    if (company == 5) {
+        position5 += widthOfExperienceImage
+        document.getElementById("experienceImageContainer6").style.left =
+            position5 + "px"
+        if (position5 == widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer6").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer6").style.left =
+                -3 * widthOfExperienceImage + "px"
+            position5 = -3 * widthOfExperienceImage
         }
     }
     resetDotColor(company)
@@ -48,6 +93,48 @@ function slideToRight(company) {
             changeTransition(document.getElementById("experienceImageContainer3").style, 'left 0')
             document.getElementById("experienceImageContainer3").style.left = 0 + 'px';
             position2 = 0
+        }
+    }
+    if (company == 3) {
+        position3 -= widthOfExperienceImage
+        document.getElementById("experienceImageContainer4").style.left =
+            position3 + "px"
+        if (position3 == -4 * widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer4").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer4").style.left =
+                0 + "px"
+            position3 = 0
+        }
+    }
+    if (company == 4) {
+        position4 -= widthOfExperienceImage
+        document.getElementById("experienceImageContainer5").style.left =
+            position4 + "px"
+        if (position4 == -4 * widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer5").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer5").style.left =
+                0 + "px"
+            position4 = 0
+        }
+    }
+    if (company == 5) {
+        position5 -= widthOfExperienceImage
+        document.getElementById("experienceImageContainer6").style.left =
+            position5 + "px"
+        if (position5 == -4 * widthOfExperienceImage) {
+            changeTransition(
+                document.getElementById("experienceImageContainer6").style,
+                "left 0"
+            )
+            document.getElementById("experienceImageContainer6").style.left =
+                0 + "px"
+            position5 = 0
         }
     }
     resetDotColor(company)
@@ -94,6 +181,94 @@ function moveSlider(company, clickedLocation) {
                 break;
         }
     }
+    if (company == 3) {
+        console.log("pass")
+        switch (clickedLocation) {
+            case 0:
+                position3 = 0
+                document.getElementById(
+                    "experienceImageContainer4"
+                ).style.left = 0 + "px"
+                position3 = 0
+                break
+            case 1:
+                position3 = -widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer4"
+                ).style.left = position3 + "px"
+                break
+            case 2:
+                position3 = -2 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer4"
+                ).style.left = position3 + "px"
+                break
+            case 3:
+                position3 = -3 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer4"
+                ).style.left = position3 + "px"
+                break
+        }
+    }
+    if (company == 4) {
+        switch (clickedLocation) {
+            case 0:
+                position4 = 0
+                document.getElementById(
+                    "experienceImageContainer5"
+                ).style.left = 0 + "px"
+                position4 = 0
+                break
+            case 1:
+                position4 = -widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer5"
+                ).style.left = position4 + "px"
+                break
+            case 2:
+                position4 = -2 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer5"
+                ).style.left = position4 + "px"
+                break
+            case 3:
+                position4 = -3 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer5"
+                ).style.left = position4 + "px"
+                break
+        }
+    }
+    if (company == 5) {
+        switch (clickedLocation) {
+            case 0:
+                position5 = 0
+                document.getElementById(
+                    "experienceImageContainer6"
+                ).style.left = 0 + "px"
+                position5 = 0
+                break
+            case 1:
+                position5 = -widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer6"
+                ).style.left = position5 + "px"
+                break
+            case 2:
+                position5 = -2 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer6"
+                ).style.left = position5 + "px"
+                break
+            case 3:
+                position5 = -3 * widthOfExperienceImage
+                document.getElementById(
+                    "experienceImageContainer6"
+                ).style.left = position5 + "px"
+                break
+        }
+    }
     resetDotColor(company)
 }
 function resetDotColor(company) {
@@ -128,6 +303,110 @@ function resetDotColor(company) {
             case -2 * widthOfExperienceImage:
                 document.getElementById("experienceLocationUA3").style.backgroundColor = '#2a26ff'
                 break;
+        }
+    }
+    if (company == 3) {
+        document.getElementById(
+            "experienceLocationUAWeb1"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationUAWeb2"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationUAWeb3"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationUAWeb4"
+        ).style.backgroundColor = "#bbb"
+        switch (position3) {
+            case 0:
+                document.getElementById(
+                    "experienceLocationUAWeb1"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationUAWeb2"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -2 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationUAWeb3"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -3 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationUAWeb4"
+                ).style.backgroundColor = "#2a26ff"
+                break
+        }
+    }
+    if (company == 4) {
+        document.getElementById("experienceLocationAS1").style.backgroundColor =
+            "#bbb"
+        document.getElementById("experienceLocationAS2").style.backgroundColor =
+            "#bbb"
+        document.getElementById("experienceLocationAS3").style.backgroundColor =
+            "#bbb"
+        document.getElementById("experienceLocationAS4").style.backgroundColor =
+            "#bbb"
+        switch (position4) {
+            case 0:
+                document.getElementById(
+                    "experienceLocationAS1"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAS2"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -2 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAS3"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -3 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAS4"
+                ).style.backgroundColor = "#2a26ff"
+                break
+        }
+    }
+    if (company == 5) {
+        document.getElementById(
+            "experienceLocationAdplin1"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationAdplin2"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationAdplin3"
+        ).style.backgroundColor = "#bbb"
+        document.getElementById(
+            "experienceLocationAdplin4"
+        ).style.backgroundColor = "#bbb"
+        switch (position5) {
+            case 0:
+                document.getElementById(
+                    "experienceLocationAdplin1"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAdplin2"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -2 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAdplin3"
+                ).style.backgroundColor = "#2a26ff"
+                break
+            case -3 * widthOfExperienceImage:
+                document.getElementById(
+                    "experienceLocationAdplin4"
+                ).style.backgroundColor = "#2a26ff"
+                break
         }
     }
 }
